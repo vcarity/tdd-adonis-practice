@@ -9,7 +9,7 @@ trait('Test/ApiClient')
 test('Store a new user and generates a jwt', async ({ assert, client }) => {
   const { username, email, password } = await Factory.model('App/Models/User').make()
 
-  const response = await client.post('/api/register')
+  const response = await client.post('/api/store')
     .send({
       username,
       email,
