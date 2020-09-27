@@ -1,3 +1,7 @@
+# to do
+- try deconstruction to make the test less verbose
+- test require-all
+
 # Adonis API application
 
 This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
