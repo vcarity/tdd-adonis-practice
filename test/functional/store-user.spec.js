@@ -18,6 +18,7 @@ test('Store a new user and generates a jwt', async ({ assert, client }) => {
     .end()
 
   response.assertStatus(200)
+  response.assertStatus(403)
 
   response.assertJSONSubset({
     user: {
@@ -27,6 +28,7 @@ test('Store a new user and generates a jwt', async ({ assert, client }) => {
   })
 
   assert.isDefined(response.body.token)
+  assert.isUndefined(response.body.token)
 
   await User
     .query()
