@@ -2,7 +2,7 @@
 
 const Factory = use('Factory')
 const User = use('App/Models/User')
-const { test, trait } = use('Test/Suite')('Store User')
+const { test, trait } = use('Test/Suite')('User/Store')
 
 trait('Test/ApiClient')
 

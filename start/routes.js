@@ -24,4 +24,6 @@ Route.group(()  =>  {
   Route
     .post('store',  'UserController.store')
     .validator('User')
+  Route
+    .post('login',  'LoginController.generate')
 }).prefix('api')
