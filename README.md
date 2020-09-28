@@ -1,6 +1,7 @@
 # to do
 - try deconstruction to make the test less verbose
 - test require-all
+- test require-body
 
 # Adonis API application
 
