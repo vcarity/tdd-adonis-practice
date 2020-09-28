@@ -21,5 +21,7 @@ Route.get('/', () => {
 })
 
 Route.group(()  =>  {
-  Route.post('store',  'UserController.store')
+  Route
+    .post('store',  'UserController.store')
+    .validator('User')
 }).prefix('api')

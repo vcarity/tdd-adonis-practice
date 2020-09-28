@@ -50,7 +50,5 @@ test("Returns an error if user already exists", async ({ assert, client }) => {
 
   response.assertStatus(422)
 
-  const { errors } = response.body
-
-  assert.equal(errors[0].message, 'The email has already been taken.')
+  assert.isUndefined(response.body.token)
 })
